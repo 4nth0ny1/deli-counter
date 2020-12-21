@@ -4,10 +4,9 @@ def line (katz_deli)
     else 
       newArray = []
       counter = 1
-      katz_deli.each do |customer|
+      katz_deli.each {|customer|
           newArray << "#{counter}. #{customer}"
-          counter += 1
-      end
+          counter += 1}
       newArray = newArray.join(' ')
       puts "The line is currently: #{newArray}"
   end
